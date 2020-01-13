@@ -6,6 +6,22 @@ Alena Selezneva
 #include <sstream>
 #include <cmath>
 
+//utility that can be used only in this .cpp file 
+bool AlmostEqualRelative(double A, double B,
+	double maxRelDiff = std::numeric_limits<double>::epsilon())
+{
+	// Calculate the difference.
+	double diff = fabs(A - B);
+	A = fabs(A);
+	B = fabs(B);
+	// Find the largest
+	double largest = (B > A) ? B : A;
+
+	if (diff <= largest * maxRelDiff)
+		return true;
+	return false;
+}
+
 Vector2D::Vector2D(int x, int y) : _x(x), _y(y)
 {}
 
@@ -22,24 +38,9 @@ double Vector2D::length() const {
 }
 
 
-bool AlmostEqualRelative(double A, double B,
-    double maxRelDiff = std::numeric_limits<double>::epsilon())
-{
-    // Calculate the difference.
-    double diff = fabs(A - B);
-    A = fabs(A);
-    B = fabs(B);
-    // Find the largest
-    double largest = (B > A) ? B : A;
-
-    if (diff <= largest * maxRelDiff)
-        return true;
-    return false;
-}
-
 
 bool Vector2D::operator==(const Vector2D& rhs) const {
-	double epsilon = 1E-5;
+	//double epsilon = 1E-5;
     return (AlmostEqualRelative(length(), rhs.length()));
 }
 
