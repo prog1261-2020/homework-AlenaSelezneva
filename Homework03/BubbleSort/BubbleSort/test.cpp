@@ -1,3 +1,7 @@
+/*
+Alena Selezneva
+*/
+
 #include "gtest/gtest.h"
 #include <vector>
 #include "SortFunctions.h"

@@ -1,3 +1,7 @@
+/*
+Alena Selezneva
+*/
+
 #pragma once
 #include <vector>
 

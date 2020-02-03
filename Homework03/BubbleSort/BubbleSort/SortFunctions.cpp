@@ -1,3 +1,7 @@
+/*
+Alena Selezneva
+*/
+
 #include "SortFunctions.h"
 #include <vector>
 
