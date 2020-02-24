@@ -8,7 +8,9 @@ Alena Selezneva
 
 Question::Question(std::fstream& file) {
 	char buffer[512];
-	file.getline(buffer, 512);
+	while (!((buffer[0] >= 'A' && buffer[0] <= 'Z') || (buffer[0] >= 'a' && buffer[0] <= 'z'))) {
+		file.getline(buffer, 512);
+	}
 	question = buffer;
 
 	file.getline(buffer, 512);

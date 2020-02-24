@@ -34,9 +34,14 @@ int main() {
 		for (int j = 0; j < questions[i]->answers.size(); j++) {
 			std::cout << j + 1 << ": " << questions[i]->answers[j] << "\n";
 		}
-		int userAnswer;
+		char userAnswer;
 		std::cin >> userAnswer;
-		if (userAnswer - 1 == questions[i]->rightIndex) {
+		while (!(userAnswer >= '1' && userAnswer <= questions[i]->answers.size() + '0')){
+			std::cout << "Please, choose a valid answer\n";
+			std::cin >> userAnswer;
+		}
+		
+		if (userAnswer - '0' - 1 == questions[i]->rightIndex) {
 			std::cout << "RIGHT\n";
 			++points;
 		}
