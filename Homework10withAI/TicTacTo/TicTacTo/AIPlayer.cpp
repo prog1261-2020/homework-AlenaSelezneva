@@ -1,3 +1,7 @@
+/*
+Alena
+*/
+
 #include "AIPlayer.h"
 
 #include <thread>         

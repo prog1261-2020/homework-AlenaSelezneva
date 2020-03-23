@@ -1,3 +1,7 @@
+/*
+Alena
+*/
+
 #include "HumanPlayer.h"
 #include <iostream>
 #include <string>

@@ -1,4 +1,6 @@
-
+/*
+Alena
+*/
 
 #include "Game.h"
 #include "HumanPlayer.h"

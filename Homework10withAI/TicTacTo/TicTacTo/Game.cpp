@@ -1,6 +1,10 @@
 #include "Game.h"
 #include "HumanPlayer.h"
 #include "AIPlayer.h"
+/*
+Alena
+*/
+
 #include <vector>
 #include <sstream>
 

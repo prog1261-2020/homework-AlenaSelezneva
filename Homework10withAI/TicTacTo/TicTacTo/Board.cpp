@@ -1,3 +1,7 @@
+/*
+Alena
+*/
+
 #include "Board.h"
 
 Board::Board() {
