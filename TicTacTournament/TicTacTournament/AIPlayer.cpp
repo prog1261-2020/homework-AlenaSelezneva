@@ -40,7 +40,7 @@ int AIPlayer::getMove() {
 		}
 	}
 
-	char otherPiece = (getPiece() == 'X' ? '0' : 'X');
+	char otherPiece = (getPiece() == 'X' ? 'O' : 'X');
 
 	for (int i = 0; i < WIN_POS.size(); i++) {
 		int combo = 0;
