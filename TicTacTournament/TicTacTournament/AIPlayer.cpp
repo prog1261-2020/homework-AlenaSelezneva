@@ -14,7 +14,7 @@ int AIPlayer::getMove() {
 		{0, 1, 2}, {3, 4, 5}, {6, 7, 8}, {0, 3, 6}, 
 		{1, 4, 7}, {2, 5, 8}, {0, 4, 8}, {2, 4, 6}
 	};
-	const std::vector<char> PLAYER_PIECES = { 'X', '0' };
+	const std::vector<char> PLAYER_PIECES = { 'X', 'O' };
 	const std::vector<int> corners = { 0, 2, 6, 8 };
 	const std::vector<int> sides = {1, 3, 5, 7};
 	std::map<int, int> oppositeCorners = { {0, 8}, {2, 6}, {8, 0}, {6, 2} };
